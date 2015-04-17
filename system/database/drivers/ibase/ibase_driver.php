@@ -204,7 +204,7 @@ class CI_DB_ibase_driver extends CI_DB {
 	public function insert_id($generator_name, $inc_by = 0)
 	{
 		//If a generator hasn't been used before it will return 0
-		return ibase_gen_id('"'.$generator_name.'"', $inc_by);
+		return ibase_gen_id($generator_name, $inc_by);
 	}
 
 	// --------------------------------------------------------------------
